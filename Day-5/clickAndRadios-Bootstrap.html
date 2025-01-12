@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Browser</title>
+</head>
+<body>
+    <div class="container mt-4 bg-dark text-white">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+
+                    <div class="display-6 mb-3 text-info">
+                        form-checkBox in Bootstrap
+                    </div>
+
+                    <h5 class="text-warning"> Simple Checkbox without any extra Bootstrap-classes.</h5>
+
+                    <div class="form-check md-3 mb-4">
+                        <input id="DefaultCheck" type="checkbox" class="form-check-input">
+                        <label for="DefaultCheck" class="form-check-label">Default Check</label>
+                    </div>
+
+                    <h5 class="text-warning"> CheckBox with "checked" attribute in input to auto check the input as Default</h5>
+
+                    <div class="form-check  md-3 mb-4">
+                        <input checked id="DefaultCheck2" type="checkbox" class="form-check-input">
+                        <label for="DefaultCheck2" class="form-check-label">Default Check 2</label>
+                    </div>
+
+                    <h5 class="text-warning"> CheckBox with "disabled" attribue </h5>
+                    
+                    <div class="form-check md-3 mb-4">
+                        <input checked disabled id="DefaultCheck2" type="checkbox" class="form-check-input">
+                        <label for="DefaultCheck2" class="form-check-label">Default Check 2</label>
+                    </div>
+
+                    <div class="display-6 mb-3 text-info">
+                        Form-Radio in Bootstrap
+                    </div>
+
+                    <div class="form-check md-4 mb-3">
+                        <input type="radio" id="radio1" class="form-check-input"  name="gender" value="Male">
+                        <label for="radio1" class="form-check-label">Male</label>
+                    </div>
+
+                    <div class="form-check md-4 mb-3">
+                        <input type="radio" id="radio2" class="form-check-input"  name="gender" value="FeMale" >
+                        <label for="radio2" class="form-check-label">FeMale</label>
+                    </div>
+
+                    <div class="display-6 mb-3 text-info">
+                        Form-switch Input in Bootstrap
+                    </div>
+                    <div class="form-check form-switch md-4 mb-4">
+                        <label for="DefaultSwitch1" class="form-check-label"> Tap to On/Off</label>
+                        <input type="checkbox" role="switch" id="DefaultSwitch1" class="form-check-input" >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Main container with top margin -->
+    <div class="container mt-3">
+        <!-- Centered row -->
+        <div class="row justify-content-center">
+            <!-- Medium column taking half width on medium screens -->
+            <div class="col-md-6">
+                <form>
+                    <h5 class="text-muted">Basic input group with label</h5>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">UName</span>
+                        <input type="text" class="form-control" id="uName1" placeholder="Enter your name">
+                    </div>
+
+                    <h5 class="text-muted">Input group with colored labels on both sides</h5>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-info">UName</span>
+                        <input type="text" class="form-control" id="uName2" placeholder="Enter your name">
+                        <span class="input-group-text bg-warning">UName</span>
+                    </div>
+
+                    <h5 class="text-muted">Email input group with @ symbol</h5>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="uName3" placeholder="Enter your mail">
+                        <span class="input-group-text bg-dark text-white">@</span>
+                        <input type="text" class="form-control" id="uName4" placeholder="google.com">
+                    </div>
+                    
+                    <h5 class="text-muted">Large email input group</h5>
+                    <div class="input-group mb-3 input-group-lg">
+                        <input type="text" class="form-control" id="uName" placeholder="Enter your mail">
+                        <span class="input-group-text bg-dark text-white">@</span>
+                        <input type="text" class="form-control" id="uName" placeholder="google.com">
+                    </div>
+
+                    <h5 class="text-muted">Small email input group</h5>
+                    <div class="input-group mb-3 input-group-sm">
+                        <input type="text" class="form-control" id="uName" placeholder="Enter your mail">
+                        <span class="input-group-text bg-dark text-white">@</span>
+                        <input type="text" class="form-control" id="uName" placeholder="google.com">
+                    </div>
+                    
+                    <h5 class="text-muted">Checkbox input group</h5>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">
+                            <input type="checkbox" class="form-check-input mt-0 bg-dark" checked>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Check-text">
+                    </div>
+                    
+                    <h5 class="text-muted">Radio button input group</h5>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">
+                            <input type="radio" class="form-check-input mt-0" checked>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Radio-text" >
+                    </div>
+                    
+                    <h5 class="text-muted">Full name input group with multiple inputs</h5>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-dark text-white">Full NAME</span>
+                        <input type="text" class="form-control"  placeholder="First Name">
+                        <input type="text" class="form-control"  placeholder="last Name">
+                    </div>
+                    
+                    <h5 class="text-muted">Input group with button on right</h5>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control">
+                        <button type="button" class="btn btn-success">Button</button>
+                    </div>
+
+                    <h5 class="text-muted">Input group with button on left</h5>
+                    <div class="input-group mb-3">
+                        <button type="button" class="btn btn-success">Button</button>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <h5 class="text-muted">Dropdown button input group</h5>
+                    <div class="input-group mb-3">
+                        <button
+                         type="button" 
+                         class="btn btn-success dropdown-toggle"  
+                         data-bs-toggle="dropdown">
+                            Dropdown </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">one</li>
+                            <li class="dropdown-item">Two</li>
+                            <li class="dropdown-item">Three</li>
+                            <li class="dropdown-item">Four</li>
+                        </ul>
+                        <input type="text" class="form-control">
+                    </div>
+                    
+                    <h5 class="text-muted">Input with dropdown menu</h5>
+                    <div class="mb-3 input-group">
+                        <label class="input-group-text">Select one Number </label>
+                        <input type="text" class="dropdown form-control" data-bs-toggle="dropdown" placeholder="Select a number">
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">one</li>
+                            <li class="dropdown-item">Two</li>
+                            <li class="dropdown-item">Three</li>
+                            <li class="dropdown-item">Four</li>
+                        </ul>
+                    </div>
+
+                    <h5 class="text-muted">Select dropdown input group</h5>
+                    <div class="mb-3 input-group">
+                        <label for="num" class="input-group-text">Count Number</label>
+                        <select name="count-numbers" class="form-control" id="num">
+                            <option selected>select a number</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <h5 class="text-muted">File upload input group</h5>
+                    <div class="mb-3 input-group">
+                        <label for="upfile" class="input-group-text bg-info">Select File</label>
+                        <input type="file" class="form-control bg-danger" id="upfile" placeholder="Choose file">
+                        <button type="button" class="btn btn-success">Upload</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
